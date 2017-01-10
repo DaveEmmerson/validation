@@ -308,7 +308,7 @@ Or with the `ValidationControllerFactory`:
   </source-code>
 </code-listing>
 
-Both techniques create a new instance of a `ValidationController` and register the instance in the component's container enabling other components in the validation library to access the approriate controller instance without needing a lot of boilerplate code or markup.
+Both techniques create a new instance of a `ValidationController` and register the instance in the component's container, enabling other components in the validation library to access the approriate controller instance without needing a lot of boilerplate code or markup.
 
 If you'd like to be completely explicit when wiring up controllers with view models and bindings, or if you need to use multiple controllers in your component, you can use the `Factory` resolver or the `ValidationControllerFactory`'s `create` method to create controller instances. Using these approaches will not automatically register the controller instance in the container which will prevent the automatic wire-up of controllers with bindings and renderers and will force you to specify the controller instance in your bindings and add renderers to the controller manually.
 
